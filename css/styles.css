@@ -1,0 +1,258 @@
+/*Header*/
+.header {
+  font-family: "Poppins", sans-serif;
+  background-color: #3853a4;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.header .header-info {
+  margin-bottom: 0;
+}
+
+hr {
+  border: 1px solid #3853a4 !important;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*Navigation*/
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  max-height: 90px;
+}
+
+a.navbar-brand {
+  font-family: "Hammersmith One", sans-serif;
+  text-shadow: 2px 2px 3px gray;
+  font-size: 40px;
+  font-weight: 600;
+  color: #3853a4 !important;
+  width: 45%;
+  /*Remove in media query*/
+}
+
+a.navbar-brand #logo-brand {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+li.nav-item {
+  width: auto;
+  height: 10%;
+  margin: 5px;
+  font-weight: bold;
+}
+
+li.nav-item.active {
+  /*background: #3853a4;
+  @include boxshadow;*/
+  border-bottom: 2px solid #3853a4;
+  font-weight: bold;
+}
+
+li.nav-item.active a.nav-link {
+  color: #3853a4 !important;
+}
+
+/*Carousel*/
+.carousel-item {
+  width: 100%;
+  height: 50rem;
+}
+
+.carousel-caption h5 {
+  font-size: 50px;
+  text-shadow: 2px 2px 5px black;
+}
+
+h1.body-head {
+  margin: 15px 15px;
+}
+
+.discount {
+  color: #3853a4;
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid #3853a4;
+  width: 50%;
+  margin: auto auto;
+  margin-bottom: 15px;
+}
+
+i.i-feature {
+  color: #3853a4;
+  font-size: 80px;
+  margin-top: 50px;
+}
+
+p.feature {
+  color: #3853a4;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*Jumbotron*/
+div.jumbotron {
+  background-image: url("./media/jumbotron-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+div.jumbotron h1.display-4 {
+  text-shadow: 2px 2px 3px black;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+div.jumbotron p.lead {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto auto;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+div.jumbotron hr.my-4 {
+  border: 1px solid #3853a4 !important;
+}
+
+/*Testimonials*/
+.rating {
+  color: #3853a4;
+}
+
+.rating-date {
+  font-style: italic;
+}
+
+.rating-name {
+  font-size: 12px;
+}
+
+.rating-title {
+  font-weight: 600;
+}
+
+.rating-review {
+  font-style: italic;
+}
+
+.rating-btn {
+  border: none;
+  background-color: white;
+  border-bottom: 2px solid #3853a4;
+  color: #3853a4;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.rating-btn:hover {
+  background-color: #3853a4;
+  color: white;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*Estimate*/
+div.jumbotron.estimate-container {
+  background-image: url("./media/bg-estimate.jpg");
+  margin-bottom: 0px !important;
+}
+
+ul.estimate-list {
+  text-shadow: 2px 2px 3px black;
+  font-size: 30px;
+  list-style: none;
+}
+
+h1.h1-estimate {
+  text-shadow: 2px 2px 3px black;
+}
+
+input {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px !important;
+  margin-top: 15px !important;
+  color: white;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px !important;
+  margin-top: 15px !important;
+  color: white;
+}
+
+/*Footer*/
+footer {
+  background-color: #8e8e8e;
+  color: white;
+  padding-top: 30px;
+  border-top: 2px solid #3853a4;
+}
+
+footer h1 {
+  font-weight: 100;
+}
+
+footer .img-paymethod {
+  max-width: 8%;
+}
+
+/*Media Queries*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    max-height: 100%;
+  }
+  a.navbar-brand {
+    font-size: 20px;
+  }
+  a.navbar-brand #logo-brand {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  h1.body-head {
+    font-size: 20px;
+  }
+  div.carousel-item.active {
+    height: 10%;
+  }
+  h1.display-4.text-center {
+    font-size: 35px;
+  }
+  p.lead {
+    width: 90% !important;
+    text-align: justify;
+  }
+  ul.estimate-list {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  footer .img-paymethod {
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hide-mobile {
+    display: none;
+  }
+  a.navbar-brand {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
