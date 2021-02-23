@@ -55,10 +55,10 @@
               <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link" href="about-us.html">ABOUT US</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">GALLERY</a>
+                <a class="nav-link" href="gallery.html">GALLERY</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">TESTIMONIALS</a>
@@ -247,17 +247,62 @@
             <div class="col-lg-6 col-12">
               <h1 class="h1-estimate">Get a Free Estimate</h1>
               <hr>
+
+              <!--Estimate Form-->
+
               <form method="post" action="estimate.php">
                 <input name="user-name" id="user-name" type="text" placeholder="Name*" required>
 
-                <input name="user-phone" id="user-phone" type="tel" placeholder="Phone (Optional)">
-
                 <input name="user-email" id="user-email" type="email" placeholder="E-Mail*" required>
+
+                <input name="user-phone" id="user-phone" type="tel" placeholder="Phone*" required>
+
+                <input name="user-address" id="user-address" placeholder="Address*" type="text" required>
+
+                <p>Is your structure one floor or two floors tall?</p>
+                <div class="row">
+                  <div class="col-6 text-center">
+                    <label for="one-floor">One Floor</label>
+                    <input name="floors" id="one-floor" value="one-floor" type="radio">
+                  </div>
+                  <div class="col-6 text-center">
+                    <label for="two-floor">Two Floor</label>
+                    <input name="floors" id="two-floor" value="two-floor" type="radio">
+                  </div>
+                </div>
+
+                <hr class="form">
+
+                <p>Is your structure insured?</p>
+                <div class="row">
+                  <div class="col-6 text-center">
+                    <label for="is-insured">Yes</label>
+                    <input name="insurance" id="is-insured" value="is-insured" type="radio">
+                  </div>
+                  <div class="col-6 text-center">
+                    <label for="is-not-insured">No</label>
+                    <input name="insurance" id="is-not-insured" value="is-not-insured" type="radio">
+                  </div>
+                </div>
+
+                <hr class="form">
+
+                <p>Have you filed a claim?</p>
+                <div class="row">
+                  <div class="col-6 text-center">
+                    <label for="claimed">Yes</label>
+                    <input name="claim" id="claimed" value="claimed" type="radio">
+                  </div>
+                  <div class="col-6 text-center">
+                    <label for="claimed">No</label>
+                    <input name="claim" id="not-claimed" value="not-claimed" type="radio">
+                  </div>
+                </div>
 
                 <textarea name="message" id="message" placeholder="Your message (Minimum 5 Characters)" minlength="5"></textarea>
                 
-                <input id="submit" type="submit">
-                </form>
+                <input name="submit" id="submit" value="submit" type="submit">
+              </form>
             </div>
           </div>
         </div>
