@@ -223,6 +223,11 @@ img.img-gallery {
   background-size: cover;
 }
 
+/*Contact*/
+.contact-us {
+  margin-bottom: 20em;
+}
+
 /*Footer*/
 footer {
   background-color: #8e8e8e;

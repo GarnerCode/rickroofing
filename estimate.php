@@ -56,3 +56,5 @@ if(IsInjected($email))
     echo "Bad email value!";
     exit;
 }
+
+?>
