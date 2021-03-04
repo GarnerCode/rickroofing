@@ -10,7 +10,9 @@
 @mixin form {
   display: block;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8) !important;
   font-size: 20px !important;
   margin-top: 15px !important;
   color: white;
@@ -193,10 +195,18 @@ input {
   border: none;
 }
 
+input#website {
+  display: none;
+}
+
 textarea {
   @include form;
 }
 
+#submit:hover {
+  @include textshadow;
+  font-weight: 600;
+}
 form p {
   @include textshadow;
   text-align: center;
@@ -205,6 +215,13 @@ form p {
 
 hr.form {
   border: 1px solid rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Gallery */
+
+img.img-fluid.img-thumbnail {
+  height: 10em;
+  width: 100%;
 }
 
 /*About*/
@@ -226,6 +243,38 @@ img.img-gallery {
   margin-bottom: 20em;
 }
 
+/*Blog*/
+div.container.panel-container {
+  margin-top: 15px;
+  margin-bottom: 10em;
+}
+
+a.a-panel-title:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 5px gray;
+}
+
+h1.h1-panel {
+  text-align: left;
+  font-size: 30px;
+  color: #3853a4;
+}
+a.a-blog-panel {
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: #3853a4;
+  }
+}
+.blog-panel-btn {
+  background: none;
+  border: none;
+  &:hover {
+    font-weight: 600;
+    color: #3853a4;
+    border-bottom: 2px solid #3853a4;
+  }
+}
 /*Footer*/
 
 footer {
@@ -277,6 +326,10 @@ footer {
   }
   video {
     width: 340px;
+  }
+  img.img-fluid.img-thumbnail {
+    height: 7em;
+    width: 100%;
   }
   footer .img-paymethod {
     max-width: 20%;

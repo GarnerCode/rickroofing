@@ -184,20 +184,33 @@ h1.h1-estimate {
 input {
   display: block;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8) !important;
   font-size: 20px !important;
   margin-top: 15px !important;
   color: white;
   border: none;
 }
 
+input#website {
+  display: none;
+}
+
 textarea {
   display: block;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8) !important;
   font-size: 20px !important;
   margin-top: 15px !important;
   color: white;
+}
+
+#submit:hover {
+  text-shadow: 2px 2px 3px black;
+  font-weight: 600;
 }
 
 form p {
@@ -208,6 +221,12 @@ form p {
 
 hr.form {
   border: 1px solid rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Gallery */
+img.img-fluid.img-thumbnail {
+  height: 10em;
+  width: 100%;
 }
 
 /*About*/
@@ -226,6 +245,43 @@ img.img-gallery {
 /*Contact*/
 .contact-us {
   margin-bottom: 20em;
+}
+
+/*Blog*/
+div.container.panel-container {
+  margin-top: 15px;
+  margin-bottom: 10em;
+}
+
+a.a-panel-title:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 5px gray;
+}
+
+h1.h1-panel {
+  text-align: left;
+  font-size: 30px;
+  color: #3853a4;
+}
+
+a.a-blog-panel {
+  color: black;
+}
+
+a.a-blog-panel:hover {
+  text-decoration: none;
+  color: #3853a4;
+}
+
+.blog-panel-btn {
+  background: none;
+  border: none;
+}
+
+.blog-panel-btn:hover {
+  font-weight: 600;
+  color: #3853a4;
+  border-bottom: 2px solid #3853a4;
 }
 
 /*Footer*/
@@ -279,6 +335,10 @@ footer .img-paymethod {
   }
   video {
     width: 340px;
+  }
+  img.img-fluid.img-thumbnail {
+    height: 7em;
+    width: 100%;
   }
   footer .img-paymethod {
     max-width: 20%;
